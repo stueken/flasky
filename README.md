@@ -53,9 +53,9 @@ See files in folder */requirements*
 	- `>>> Post.generate_fake(100)`
 
 ###Run and test the local application
-- Start the development server with the application: `(venv)$ python manage.py runserver` 
+- Start the development server with the application: `(venv)$ python manage.py runserver`  
 **Note:** If you register with the admin mail address, you can edit users, posts and comments and assign roles.)
-- To run written unit tests, install the code coverage tool ***Coverage*** and the web browser automation tool ***Selenium***: `(venv)$ pip install coverage selenium`, then run the tests: `(venv)$ python manage.py test --coverage`
+- To run written unit tests, install the code coverage tool ***Coverage*** and the web browser automation tool ***Selenium***: `(venv)$ pip install coverage selenium`, then run the tests: `(venv)$ python manage.py test --coverage`  
 **Note:** A link to a nicer formatted, navigateable HTML report with more detail is displayed at the end of the report.
 
 ##Known issues and solutions
@@ -75,12 +75,12 @@ See files in folder */requirements*
 - Set the environment variables for the email-server:
 	- `$ heroku config:set MAIL_USERNAME=<mail username>` 
 	- `$ heroku config:set MAIL_PASSWORD=<mail password>`
-- Set the administrator email address as local environment variable: `$ heroku config:set FLASKY_ADMIN=<mail admin>`
+- Set the administrator email address as local environment variable: `$ heroku config:set FLASKY_ADMIN=<mail admin>`  
 **Note:** As the needed requirements.txt file and the Procfile are already included in this repository, they don't need to be created separately anymore.
 
 ###Deploy and run the application
 - Upload the application to the Heroku servers: `$ git push heroku master`
 - Execute the deploy command: `$ heroku run python manage.py deploy`
 - After the database tables are created and configured, restart the application: `$ heroku restart`
-- Go to **<appname>.herokuapp.com**. That's it! :)
+- Go to appname.herokuapp.com. That's it! :)  
 **Note:** In the free tier, the Heroku servers seem to be really slow. It could be that you need to submit a post or comment twice in order to work properly.
